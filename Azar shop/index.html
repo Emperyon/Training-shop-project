@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Azar shop</title>
+</head>
+<body>
+    <section class='top'>
+        <a href="#">بلاگ ما</a>
+        <a href="#">,ورود کاربران</a>
+    </section>
+    <section class='navbar' id='navbar'>
+        <a href="#" class='cartbtn'><i></i>سبد خرید </a>
+        <div class='navbox'>
+            <div class='dropnav'>
+               <button class='navbtn' id='navbtn'>مردانه</button>
+                <div class='navmen'>
+                    <a href="#">text 1</a>
+                    <a href="#">text 2</a>
+                    <a href="#">text 3</a>
+                </div> 
+            </div>
+            <div class='dropnav'>
+                <button class='navbtn' id='navbtn'>زنانه</button>
+                 <div class='navmen'>
+                     <a href="#">text 1</a>
+                     <a href="#">text 2</a>
+                     <a href="#">text 3</a>
+                 </div> 
+             </div>
+             <div class='dropnav'>
+                <button class='navbtn' id='navbtn'>کودکانه</button>
+                 <div class='navmen'>
+                     <a href="#">text 1</a>
+                     <a href="#">text 2</a>
+                     <a href="#">text 3</a>
+                 </div> 
+             </div>
+            <a href="#">مبلمان</a>
+            <a href="#">لوازم خانه</a>
+            <a href="#">آرایشی</a>
+            <a href="#">فرش</a>
+        </div>
+    </section>
+    <section class='maincontainer'>
+        <div class='grid'>
+            <div class='innergrid'>
+
+            </div>
+        </div>
+        <div class='cata'>
+
+        </div>
+    </section>
+   
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+    </script>
+    <script src="./script.js"></script>
+</body>
+<footer>
+
+</footer>
+</html>
