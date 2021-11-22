@@ -6,8 +6,7 @@
 }
 
 body {
-  background: -webkit-gradient(linear, left top, right top, from(#ffefba), to(#ffffff));
-  background: linear-gradient(to right, #ffefba, #ffffff);
+  background: #f8f1da;
 }
 
 .top {
@@ -26,7 +25,7 @@ body {
 }
 
 .top a {
-  color: #f2f2f2;
+  color: #f1dfdf;
   font-size: 18px;
   text-decoration: none;
   cursor: pointer;
@@ -289,7 +288,7 @@ body {
   font-size: 18px;
   background: -webkit-gradient(linear, left top, right top, from(#2980b9), to(#2c3e50));
   background: linear-gradient(to right, #2980b9, #2c3e50);
-  color: #f2f2f2;
+  color: #f1dfdf;
   -webkit-box-shadow: 0 6px 4px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 6px 4px 0 rgba(0, 0, 0, 0.5);
   outline: none;
@@ -351,7 +350,7 @@ body {
 
 .pagecont {
   width: calc(100% - 250px);
-  height: 1400px;
+  height: 800px;
 }
 
 .pagecont .shophead {
@@ -422,8 +421,8 @@ body {
 .pagecont .shopimg .imgcont {
   position: relative;
   height: auto;
-  -webkit-box-shadow: 0 2px 6px 0 #f9ffa0;
-          box-shadow: 0 2px 6px 0 #f9ffa0;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .pagecont .shopimg .row {
@@ -453,6 +452,228 @@ body {
   content: "";
   display: table;
   clear: both;
+}
+
+.shopcontent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 400px;
+  height: 450px;
+}
+
+.shopcontent .cardcontent {
+  width: 300px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 16px;
+}
+
+.shopcontent .cardcontent .status {
+  font-size: 20px;
+  border-radius: 20px 20px 0 0;
+  background: -webkit-gradient(linear, left top, right top, from(#ece9e6), to(#ffffff));
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 8px 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.shopcontent .cardcontent .status h2 span {
+  font-weight: 200;
+  font-size: 24px;
+  color: #000;
+  text-align: center;
+}
+
+.shopcontent .cardcontent .status .fa-check {
+  color: #20d338;
+}
+
+.shopcontent .cardcontent .count {
+  font-size: 18px;
+  background: -webkit-gradient(linear, left top, right top, from(#ece9e6), to(#ffffff));
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 8px 16px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  text-align: center;
+}
+
+.shopcontent .cardcontent .price {
+  font-size: 20px;
+  border-radius: 0 0 20px 20px;
+  background: -webkit-gradient(linear, left top, right top, from(#ece9e6), to(#ffffff));
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 8px 16px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  text-align: center;
+  color: #272727;
+}
+
+.shopcontent .cardcontent .price .numprice {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #20cc9e;
+          text-decoration-color: #20cc9e;
+}
+
+.shopcontent .cardcontent .price .numprice i {
+  text-decoration: none;
+  color: #20cc9e;
+}
+
+.shopcontent .cardcontent .buying {
+  width: 90%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shopcontent .cardcontent .buying a {
+  padding: 10px 20px;
+  background-color: #29b1ff;
+  color: #f1dfdf;
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 20px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.shopcontent .cardcontent .buying a:active {
+  background-color: #1d78c2;
+  -webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.shopcontent .cardcontent .buying input {
+  width: 70px;
+  height: 40px;
+  font-size: 24px;
+  border-radius: 16px;
+  padding: 0 16px;
+}
+
+.infobox {
+  width: calc(100% - 250px);
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.infobox .maincontinfo {
+  width: 90%;
+  height: 550px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  text-align: right;
+  background-color: #fffece;
+  border-right: 3px solid gold;
+}
+
+#num1 {
+  width: 100%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#num1 h1 {
+  font-size: 30px;
+  padding: 10px 0;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #20cc9e;
+          text-decoration-color: #20cc9e;
+  width: 100%;
+  margin-right: 10px;
+}
+
+#num1 h2 {
+  padding: 10px 0;
+  font-size: 23px;
+  width: 100%;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+#num1 h2 span {
+  font-weight: 300;
+  font-size: 18px;
 }
 
 footer {
@@ -632,7 +853,7 @@ footer .footcontent .socialbar {
 
 footer .footcontent .socialbar i {
   font-size: 28px;
-  color: #f2f2f2;
+  color: #f1dfdf;
 }
 
 footer .footcontent .socialbar i:hover {
